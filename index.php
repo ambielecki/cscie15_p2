@@ -83,17 +83,19 @@
             <h3>Welcome to my version of an XKCD password generator. What is an XKCD password? You could go to the source and read the comic at <a href='https://xkcd.com/936/'>xkcd: Password Strength</a>, but in words:</h3>
             
             <ul>
-                <li>Passwords as we know them, with added numbers, special characters, and random caps have some flaws</li>
-                <ul>
-                    <li>They are hard to remember</li>
-                    <li>Depending on length they can be relatively easy for a brute force approach to crack them</li>
-                </ul>
-                <li>So instead of using a word and adding or replacing some characters we will use a number of random words strung together.</li>
-                <ul>
-                    <li>This should be easier to remember</li>
-                    <li>With the added character space it should be harder to brute force (assuming the attacker doesn't know we are using this method)</li>
-                    <li>We can add in special characters to meet system requirements</li>
-                </ul>
+                <li>Passwords as we know them, with added numbers, special characters, and random caps have some flaws
+                    <ul>
+                        <li>They are hard to remember</li>
+                        <li>Depending on length they can be relatively easy for a brute force approach to crack them</li>
+                    </ul>
+                </li>
+                <li>So instead of using a word and adding or replacing some characters we will use a number of random words strung together.
+                    <ul>
+                        <li>This should be easier to remember</li>
+                        <li>With the added character space it should be harder to brute force (assuming the attacker doesn't know we are using this method)</li>
+                        <li>We can add in special characters to meet system requirements</li>
+                    </ul>
+                </li>
             </ul>
             <h3>For my version we're adding some visual flair (and some help remembering) with pictures of the toys lying around the house.
             Our word list will be taken from the names of the toys (scraped from a directory listing of the image files).
