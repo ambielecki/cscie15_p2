@@ -22,7 +22,8 @@
         <!--Got ideas for preserving user data in this StackOverflow http://stackoverflow.com/questions/19097320/keeping-radio-buttons-checked-after-form-submit-->
         <form method='post' action='index.php' id='optionsform'>
             <div class='formtext'>How Many Words Would You Like? (min = 1 max = 9)?:</div><input id='numberofwords' type='text' name='howmany' value='<?php echo($placeholder);?>'><br>
-            <div id='numberhint' class='hint'>Only values between 1 and 9 are accepted.</div>
+            <div id='numberhint' class='hint'>Only values between 1 and 9 are accepted (JS)</div>
+            <div id='phpwarning'><?php echo($warning)?></div>
             <br>
             
             <div class='formtext'>Would you like to include a separator between words?:</div>
@@ -45,6 +46,7 @@
                 <input type='radio' name='charpos' value='right'<?php if($form['charpos']=='right'){echo('checked');};?>> Right<br>
             </div>
             
+            <!--something wrong here-->
             <div class='formtext'>Would you like to include a number?:</div>
             <input type='radio' name='number' value='yes' id='numyes'<?php if($form['number']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
             <input type='radio' name='number' value='no' id='numno' <?php if($form['number']=='no'){echo('checked');};?>> No<br>
@@ -81,7 +83,6 @@
         
         <div id='explanation'>
             <h3>Welcome to my version of an XKCD password generator. What is an XKCD password? You could go to the source and read the comic at <a href='https://xkcd.com/936/'>xkcd: Password Strength</a>, but in words:</h3>
-            
             <ul>
                 <li>Passwords as we know them, with added numbers, special characters, and random caps have some flaws
                     <ul>

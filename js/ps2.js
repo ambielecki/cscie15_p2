@@ -1,6 +1,13 @@
+/*js for CSCI E-15 P2
+ *Code for hiding unused fields and
+ *checking if requested number of words is bewtween 1-9
+ */
+
 window.addEventListener('load', numCheck);
 window.addEventListener('load', formHide);
 
+//function for checking if user input a correct value in number field
+//also eliminates strings
 function numCheck(){
     var numberWords = document.getElementById('numberofwords');
     var button = document.getElementById('getpassword');
@@ -9,9 +16,8 @@ function numCheck(){
     button.addEventListener('click', finalCheck);
     
     function check(){
-        var numberValue = numberWords.value
-        console.log(numberValue);
-        if (numberValue<1 || numberValue>9) {
+        var numberValue = numberWords.value;
+        if (!(numberValue>0 && numberValue<9)){
             hint.style.display = 'inline-block';
         }else{
             hint.style.display = 'none'
@@ -20,12 +26,13 @@ function numCheck(){
     
     function finalCheck(evt){
         var numberValue = numberWords.value
-        if (numberValue<1 || numberValue>9) {
+        if (!(numberValue>0 && numberValue<9)) {
             evt.preventDefault();
         }
     }
 }
 
+//function for hiding divs that are not in use
 function formHide(){
     var capsDiv = document.getElementById('capsdiv');
     var camelYes = document.getElementById('camelyes');
