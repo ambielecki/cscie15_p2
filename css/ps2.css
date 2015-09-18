@@ -1,0 +1,37 @@
+.header{
+	background-color: #D6D6D6;
+	padding: 2px 0px 2px 100px;
+	margin-bottom: 25px;
+}
+#maincontainer{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#optionsform{
+	width: 700px;
+	padding: 5px;
+	border-style: solid;
+	background-color: #66CCFF;
+}
+.formtext{
+	display: inline-block;
+	width: 400px;
+}
+.radio1text{
+	display: inline-block;
+	width: 70px;
+}
+#getpassword{
+	margin-top: 10px;
+}
+.passwordtext{
+	display: inline-block;
+	width: 100px;
+}
+#finalpassword{
+	background-color: #66CCFF;
+}
+.hint{
+	display: none;
+	color: red;
+}

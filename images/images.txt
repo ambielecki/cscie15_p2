@@ -1,0 +1,38 @@
+	Volume	in	drive	C	is	SSD
+	Volume	Serial	Number	is	BEDC-A7AA	
+						
+	Directory	of	c:\xampp\htdocs\cscie15_p2\images			
+						
+9/18/2015	10:00	AM	<DIR>	.		
+9/18/2015	10:00	AM	<DIR>	..		
+9/17/2015	7:50	AM	"56,005"	blades.jpg		
+9/17/2015	7:50	AM	"65,126"	boulder.jpg		
+9/17/2015	7:50	AM	"60,604"	bumblebee.jpg		
+9/17/2015	7:50	AM	"58,890"	chase.jpg		
+9/17/2015	7:50	AM	"38,670"	dochudson.jpg		
+9/18/2015	8:04	AM	"48,280"	dogpound.jpg		
+9/18/2015	8:04	AM	"45,974"	donatello.jpg		
+9/17/2015	7:50	AM	"39,264"	dusty.jpg		
+9/17/2015	7:50	AM	"35,652"	echo.jpg		
+9/17/2015	7:50	AM	"35,323"	francesco.jpg		
+9/17/2015	7:50	AM	"56,461"	heatwave.jpg		
+9/18/2015	10:00	AM	0	images.txt		
+9/18/2015	8:04	AM	"47,452"	krang.jpg		
+9/18/2015	8:04	AM	"48,094"	leatherhead.jpg		
+9/18/2015	8:04	AM	"48,231"	leonardo.jpg		
+9/17/2015	7:50	AM	"40,673"	lightning.jpg		
+9/17/2015	7:50	AM	"38,913"	mater.jpg		
+9/18/2015	8:04	AM	"50,670"	metalhead.jpg		
+9/18/2015	8:04	AM	"47,727"	michaelangelo.jpg		
+9/18/2015	8:04	AM	"50,880"	newtralizer.jpg		
+9/18/2015	8:04	AM	"50,670"	raphael.jpg		
+9/17/2015	7:50	AM	"34,557"	ripslinger.jpg		
+9/18/2015	8:04	AM	"49,073"	shredder.jpg		
+9/17/2015	7:50	AM	"34,661"	skipper.jpg		
+9/18/2015	8:04	AM	"52,298"	slash.jpg		
+9/18/2015	8:04	AM	"47,470"	splinter.jpg		
+9/18/2015	8:04	AM	"53,815"	tigerclaw.jpg		
+9/17/2015	7:50	AM	"45,897"	windlifter.jpg		
+9/11/2015	11:33	AM	"319,612"	Working.jpg		
+	29	File(s)	"1,600,942"	bytes		
+	2	Dir(s)	"69,575,835,648"	bytes	free	
