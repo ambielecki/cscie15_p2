@@ -22,7 +22,6 @@
         <!--Got ideas for preserving user data in this StackOverflow http://stackoverflow.com/questions/19097320/keeping-radio-buttons-checked-after-form-submit-->
         <form method='post' action='index.php' id='optionsform'>
             <div class='formtext'>How Many Words Would You Like? (min = 1 max = 9)?:</div><input id='numberofwords' type='text' name='howmany' value='<?php echo($placeholder);?>'><br>
-            <div><?php echo($warning)?></div>
             <div id='numberhint' class='hint'>Only values between 1 and 9 are accepted.</div>
             <br>
             
@@ -68,45 +67,33 @@
             <div class='formtext'></div><input id='getpassword' type='submit' value='Get Password'>
         </form><br>
         
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[0]);?>' alt='<?php echo($namesfordiv[0]);?>' height=100px width=100px></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[1]);?>' alt='<?php echo($namesfordiv[1]);?>' height=100px width=100px></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[2]);?>' alt='<?php echo($namesfordiv[2]);?>' height=100px width=100px></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[3]);?>' alt='<?php echo($namesfordiv[3]);?>' height=100px width=100px></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[4]);?>' alt='<?php echo($namesfordiv[4]);?>' height=100px width=100px></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[5]);?>' alt='<?php echo($namesfordiv[5]);?>' height=100px width=100px></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[6]);?>' alt='<?php echo($namesfordiv[6]);?>' height=100px width=100px></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[7]);?>' alt='<?php echo($namesfordiv[7]);?>' height=100px width=100px></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[8]);?>' alt='<?php echo($namesfordiv[8]);?>' height=100px width=100px></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[0]);?>' alt='<?php echo($namesfordiv[0]);?>' height='100' width='100'><br><?php echo($namesfordiv[0]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[1]);?>' alt='<?php echo($namesfordiv[1]);?>' height='100' width='100'><br><?php echo($namesfordiv[1]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[2]);?>' alt='<?php echo($namesfordiv[2]);?>' height='100' width='100'><br><?php echo($namesfordiv[2]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[3]);?>' alt='<?php echo($namesfordiv[3]);?>' height='100' width='100'><br><?php echo($namesfordiv[3]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[4]);?>' alt='<?php echo($namesfordiv[4]);?>' height='100' width='100'><br><?php echo($namesfordiv[4]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[5]);?>' alt='<?php echo($namesfordiv[5]);?>' height='100' width='100'><br><?php echo($namesfordiv[5]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[6]);?>' alt='<?php echo($namesfordiv[6]);?>' height='100' width='100'><br><?php echo($namesfordiv[6]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[7]);?>' alt='<?php echo($namesfordiv[7]);?>' height='100' width='100'><br><?php echo($namesfordiv[7]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[8]);?>' alt='<?php echo($namesfordiv[8]);?>' height='100' width='100'><br><?php echo($namesfordiv[8]);?></div>
         <br>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[0]);?></h4></div>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[1]);?></h4></div>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[2]);?></h4></div>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[3]);?></h4></div>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[4]);?></h4></div>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[5]);?></h4></div>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[6]);?></h4></div>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[7]);?></h4></div>
-        <div class='passwordtext'><h4><?php echo($namesfordiv[8]);?></h4></div>
-
-        <br>
-        
-        <div id='finalpassword'><h3>Your Password is: <?php echo($password)?></h3></div>
+        <div id='finalpassword'><h2>Your Password is: <?php echo($password)?></h2></div>
         
         <div id='explanation'>
-            <h3>Welcome to my version of an XKCD password generator. What is an XKCD password? You could got to the source and read the comic at <a href='https://xkcd.com/936/'>xkcd: Password Strength</a>, but in words:</h3>
+            <h3>Welcome to my version of an XKCD password generator. What is an XKCD password? You could go to the source and read the comic at <a href='https://xkcd.com/936/'>xkcd: Password Strength</a>, but in words:</h3>
             
             <ul>
                 <li>Passwords as we know them, with added numbers, special characters, and random caps have some flaws</li>
-                <ol>
+                <ul>
                     <li>They are hard to remember</li>
                     <li>Depending on length they can be relatively easy for a brute force approach to crack them</li>
-                </ol>
+                </ul>
                 <li>So instead of using a word and adding or replacing some characters we will use a number of random words strung together.</li>
-                <ol>
+                <ul>
                     <li>This should be easier to remember</li>
                     <li>With the added character space it should be harder to brute force (assuming the attacker doesn't know we are using this method)</li>
                     <li>We can add in special characters to meet system requirements</li>
-                </ol>
+                </ul>
             </ul>
             <h3>For my version we're adding some visual flair (and some help remembering) with pictures of the toys lying around the house.
             Our word list will be taken from the names of the toys (scraped from a directory listing of the image files).
