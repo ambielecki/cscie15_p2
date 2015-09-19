@@ -17,7 +17,7 @@ function numCheck(){
     
     function check(){
         var numberValue = numberWords.value;
-        if (!(numberValue>0 && numberValue<9)){
+        if (!(numberValue>0 && numberValue<=9)){
             hint.style.display = 'inline-block';
         }else{
             hint.style.display = 'none'
@@ -26,7 +26,7 @@ function numCheck(){
     
     function finalCheck(evt){
         var numberValue = numberWords.value
-        if (!(numberValue>0 && numberValue<9)) {
+        if (!(numberValue>0 && numberValue<=9)) {
             evt.preventDefault();
         }
     }
