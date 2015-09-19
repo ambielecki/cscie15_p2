@@ -13,7 +13,7 @@
 <body>
     <div class='header'>
         <h1>
-            CSCI-E15 P2<br>
+            CSCI E-15 P2<br>
              An XKCD Style Password Generator<br>
              As Seen Through the Eyes of a 4 Year Old
         </h1>
