@@ -3,9 +3,9 @@
     if(!$_POST){
         $form = array(
         'howmany'=>'3',
-        'special'=>'no',
+        'special'=>'yes',
         'charpos'=>'left',
-        'number'=>'no',
+        'number'=>'yes',
         'numpos'=>'left',
         'camel'=>'no',
         'caps'=>'lower',
@@ -61,7 +61,8 @@
             $placeholder = $form['howmany'];
         }
         
-        $speciallist = array('!','#','%','&','+','<','>','~'); //an array of some special characters
+        //note to self using the char < messed everthing up
+        $speciallist = array('!','#','%','&','+','>','~'); //an array of some special characters
 
         //arrays for the images and names we'll use to build the password
         $imagesfordiv = array();
@@ -116,6 +117,7 @@
                 $password = $password . $thisnumber;
             }
         }
+        
     }else{//PHP validation, only shows if JS is disabled get here if we failed the howmany field being between 1 and 9
         if($_POST){
             $form = $_POST;
@@ -124,9 +126,9 @@
         }else{
             $form = array(
             'howmany'=>'3',
-            'special'=>'no',
+            'special'=>'yes',
             'charpos'=>'left',
-            'number'=>'no',
+            'number'=>'yes',
             'numpos'=>'left',
             'camel'=>'no',
             'caps'=>'lower',

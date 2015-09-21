@@ -12,6 +12,8 @@ Coming soon
 ## Details for teaching team
 No login required.
 
+This is a work in progress, the image list is currently far to small to provide sercure passwords. But it was fun to do something a bit different.
+
 Word list was generated from the file names contained in images.txt, a cleaned version of the image list for the site.
 
 There is PHP validation of the number of words, however it is in addition to JS validation, you would need to disable JS to see it.

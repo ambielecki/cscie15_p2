@@ -99,7 +99,8 @@
                 </li>
             </ul>
             <h3>For my version we're adding some visual flair (and some help remembering) with pictures of the toys lying around the house.
-            Our word list will be taken from the names of the toys (scraped from a directory listing of the image files).
+            Our word list will be taken from the names of the toys (scraped from a directory listing of the image files). This is still a work in progress as the
+            image file is too small to provide secure passwords.
             <br>Options include:</h3>
             <ul>
                 <li>Number of words</li>
