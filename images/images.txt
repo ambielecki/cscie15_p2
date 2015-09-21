@@ -59,8 +59,6 @@ tiefighter.jpg
 tigerclaw.jpg
 unikitty.jpg
 windlifter.jpg
-Working.jpg
-working.txt
 wyldstyle.jpg
 xwing.jpg
 yoda.jpg
