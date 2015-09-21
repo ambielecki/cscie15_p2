@@ -69,15 +69,15 @@
             <div class='formtext'></div><input id='getpassword' type='submit' value='Get Password'>
         </form><br>
         
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[0]);?>' alt='<?php echo($namesfordiv[0]);?>' height='100' width='100'><br><?php echo($namesfordiv[0]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[1]);?>' alt='<?php echo($namesfordiv[1]);?>' height='100' width='100'><br><?php echo($namesfordiv[1]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[2]);?>' alt='<?php echo($namesfordiv[2]);?>' height='100' width='100'><br><?php echo($namesfordiv[2]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[3]);?>' alt='<?php echo($namesfordiv[3]);?>' height='100' width='100'><br><?php echo($namesfordiv[3]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[4]);?>' alt='<?php echo($namesfordiv[4]);?>' height='100' width='100'><br><?php echo($namesfordiv[4]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[5]);?>' alt='<?php echo($namesfordiv[5]);?>' height='100' width='100'><br><?php echo($namesfordiv[5]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[6]);?>' alt='<?php echo($namesfordiv[6]);?>' height='100' width='100'><br><?php echo($namesfordiv[6]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[7]);?>' alt='<?php echo($namesfordiv[7]);?>' height='100' width='100'><br><?php echo($namesfordiv[7]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[8]);?>' alt='<?php echo($namesfordiv[8]);?>' height='100' width='100'><br><?php echo($namesfordiv[8]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[0]);?>' alt='<?php echo($namesfordiv[0]);?>' height='125' width='125'><br><?php echo($namesfordiv[0]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[1]);?>' alt='<?php echo($namesfordiv[1]);?>' height='125' width='125'><br><?php echo($namesfordiv[1]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[2]);?>' alt='<?php echo($namesfordiv[2]);?>' height='125' width='125'><br><?php echo($namesfordiv[2]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[3]);?>' alt='<?php echo($namesfordiv[3]);?>' height='125' width='125'><br><?php echo($namesfordiv[3]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[4]);?>' alt='<?php echo($namesfordiv[4]);?>' height='125' width='125'><br><?php echo($namesfordiv[4]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[5]);?>' alt='<?php echo($namesfordiv[5]);?>' height='125' width='125'><br><?php echo($namesfordiv[5]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[6]);?>' alt='<?php echo($namesfordiv[6]);?>' height='125' width='125'><br><?php echo($namesfordiv[6]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[7]);?>' alt='<?php echo($namesfordiv[7]);?>' height='125' width='125'><br><?php echo($namesfordiv[7]);?></div>
+        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[8]);?>' alt='<?php echo($namesfordiv[8]);?>' height='125' width='125'><br><?php echo($namesfordiv[8]);?></div>
         <br>
         <div id='finalpassword'><h2>Your Password is: <?php echo($password)?></h2></div>
         
