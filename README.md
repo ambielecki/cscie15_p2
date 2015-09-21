@@ -7,7 +7,7 @@
 A utility for generating [xkcd style passwords](http://xkcd.com/936/) with added pictures to help with memory.
 
 ## Demo
-Coming soon
+<http://screencast.com/t/IltHKvDr5S>
 
 ## Details for teaching team
 No login required.
