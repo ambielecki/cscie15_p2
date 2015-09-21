@@ -4,7 +4,7 @@
 <http://p2.andrewbielecki.me>
 
 ## Description
-A utility for generating [xkcd style passwords](http://xkcd.com/936/) with added pictures to help with memory.
+A utility for generating [xkcd style passwords](http://xkcd.com/936/) done with the names of images of toys found around the house.
 
 ## Demo
 <http://screencast.com/t/IltHKvDr5S>

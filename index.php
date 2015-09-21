@@ -46,7 +46,6 @@
                 <input type='radio' name='charpos' value='right'<?php if($form['charpos']=='right'){echo('checked');};?>> Right<br>
             </div>
             
-            <!--something wrong here-->
             <div class='formtext'>Would you like to include a number?:</div>
             <input type='radio' name='number' value='yes' id='numyes'<?php if($form['number']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
             <input type='radio' name='number' value='no' id='numno' <?php if($form['number']=='no'){echo('checked');};?>> No<br>
