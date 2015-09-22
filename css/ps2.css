@@ -30,6 +30,7 @@
 }
 #finalpassword{
 	background-color: #66CCFF;
+	width: 100%;
 }
 .hint{
 	display: none;

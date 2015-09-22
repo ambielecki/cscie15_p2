@@ -19,13 +19,14 @@
         </h1>
     </div>
     <div id='maincontainer'>
-        <!--Got ideas for preserving user data in this StackOverflow http://stackoverflow.com/questions/19097320/keeping-radio-buttons-checked-after-form-submit-->
         <form method='post' action='index.php' id='optionsform'>
+            <!--I know this could have been done using a dropdown, but I actually wanted to work on some validation-->
             <div class='formtext'>How Many Words Would You Like? (min = 1 max = 9)?:</div><input id='numberofwords' type='text' name='howmany' value='<?php echo($placeholder);?>'><br>
             <div id='numberhint' class='hint'>Only values between 1 and 9 are accepted (JS)</div>
             <div id='phpwarning'><?php echo($warning)?></div>
             <br>
             
+            <!--Got ideas for preserving user data in this StackOverflow http://stackoverflow.com/questions/19097320/keeping-radio-buttons-checked-after-form-submit-->
             <div class='formtext'>Would you like to include a separator between words?:</div>
             <input type='radio' name='separator' value='yes' id='sepyes' <?php if($form['separator']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
             <input type='radio' name='separator' value='no' id='sepno' <?php if($form['separator']=='no'){echo('checked');};?>> No<br>
@@ -67,7 +68,6 @@
             </div>
             <div class='formtext'></div><input id='getpassword' type='submit' value='Get Password'>
         </form><br>
-        
         <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[0]);?>' alt='<?php echo($namesfordiv[0]);?>' height='125' width='125'><br><?php echo($namesfordiv[0]);?></div>
         <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[1]);?>' alt='<?php echo($namesfordiv[1]);?>' height='125' width='125'><br><?php echo($namesfordiv[1]);?></div>
         <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[2]);?>' alt='<?php echo($namesfordiv[2]);?>' height='125' width='125'><br><?php echo($namesfordiv[2]);?></div>
@@ -78,6 +78,7 @@
         <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[7]);?>' alt='<?php echo($namesfordiv[7]);?>' height='125' width='125'><br><?php echo($namesfordiv[7]);?></div>
         <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[8]);?>' alt='<?php echo($namesfordiv[8]);?>' height='125' width='125'><br><?php echo($namesfordiv[8]);?></div>
         <br>
+        <!--I don't live the css style here, if the password is long and you shrink the window the password will go past the background, v2 problem-->
         <div id='finalpassword'><h2>Your Password is: <?php echo($password)?></h2></div>
         
         <div id='explanation'>

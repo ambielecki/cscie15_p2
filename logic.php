@@ -1,20 +1,5 @@
 <?php
-    //set defaults to avoid errors
-    if(!$_POST){
-        $form = array(
-        'howmany'=>'3',
-        'special'=>'yes',
-        'charpos'=>'left',
-        'number'=>'yes',
-        'numpos'=>'left',
-        'camel'=>'no',
-        'caps'=>'lower',
-        'separator'=>'yes',
-        'sepval'=>'_');
-    }else{
-        $form = array();
-    }
-    
+
     $warning = '';//warning for later php validation
     
     //initiate an array to hold a list of images available
