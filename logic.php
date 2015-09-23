@@ -1,5 +1,4 @@
 <?php
-
     $warning = '';//warning for later php validation
     
     //initiate an array to hold a list of images available
@@ -42,7 +41,7 @@
         
         //sets a placeholder for the number of words in the HTML field
         
-        if ($form['howmany']){
+        if($form['howmany']){
             $placeholder = $form['howmany'];
         }
         
@@ -67,16 +66,16 @@
             $namesfordiv[$i] = $nameslist[$random];
             
             //take care of capitalization
-            if ($form['camel'] == 'yes'){
+            if($form['camel'] == 'yes'){
                 $thisword = ucfirst($nameslist[$random]);//capitalize first letter
-            }elseif ($form['caps'] == 'caps'){
+            }elseif($form['caps'] == 'caps'){
                 $thisword = strtoupper($nameslist[$random]);//make all uppercase
             }else{
                 $thisword = $nameslist[$random];
             }
             
             //add separator if requested
-            if ($form['separator'] == 'yes' && $password != ''){//adds to the beginning of every word after the first
+            if($form['separator'] == 'yes' && $password != ''){//adds to the beginning of every word after the first
                 $password = $password . $form['sepval'] . $thisword;
             }else{
                 $password = $password . $thisword;
@@ -84,9 +83,9 @@
         }
         
         //add special char if requested
-        if ($form['special'] == 'yes'){
+        if($form['special'] == 'yes'){
             $thisspecial = $speciallist[rand(0, (count($speciallist)-1))];
-            if ($form['charpos'] == 'left'){
+            if($form['charpos'] == 'left'){
                 $password = $thisspecial . $password;
             }else{
                 $password = $password . $thisspecial;
@@ -94,9 +93,9 @@
         }
         
         //add random number if requested
-        if ($form['number'] == 'yes'){
+        if($form['number'] == 'yes'){
             $thisnumber = rand(0,9);
-            if ($form['numpos'] == 'left'){
+            if($form['numpos'] == 'left'){
                 $password = $thisnumber . $password;
             }else{
                 $password = $password . $thisnumber;
