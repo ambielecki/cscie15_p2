@@ -38,32 +38,32 @@
             </div>
 
             <div class='formtext'>Would you like to include a special character (ex: !%#)?:</div>
-            <input type='radio' name='special' value='yes' id='charyes'<?php if($form['special']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
+            <input type='radio' name='special' value='yes' id='charyes' <?php if($form['special']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
             <input type='radio' name='special' value='no' id='charno' <?php if($form['special']=='no'){echo('checked');};?>> No<br>
 
             <div id='chardiv' <?php if($form['special']=='no'){echo('style="display:none"');};?>>
                 <div class='formtext'>On the left or right?:</div>
                 <input type='radio' name='charpos' value='left' <?php if($form['charpos']!='right'){echo('checked');};?>><div class='radio1text'>Left</div>
-                <input type='radio' name='charpos' value='right'<?php if($form['charpos']=='right'){echo('checked');};?>> Right<br>
+                <input type='radio' name='charpos' value='right' <?php if($form['charpos']=='right'){echo('checked');};?>> Right<br>
             </div>
 
             <div class='formtext'>Would you like to include a number?:</div>
-            <input type='radio' name='number' value='yes' id='numyes'<?php if($form['number']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
+            <input type='radio' name='number' value='yes' id='numyes' <?php if($form['number']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
             <input type='radio' name='number' value='no' id='numno' <?php if($form['number']=='no'){echo('checked');};?>> No<br>
 
             <div id='numdiv' <?php if($form['number']=='no'){echo('style="display:none"');};?>>
                 <div class='formtext'>On the left or right?:</div>
                 <input type='radio' name='numpos' value='left' <?php if($form['numpos']!='right'){echo('checked');};?>><div class='radio1text'>Left</div>
-                <input type='radio' name='numpos' value='right'<?php if($form['numpos']=='right'){echo('checked');};?>> Right<br>
+                <input type='radio' name='numpos' value='right' <?php if($form['numpos']=='right'){echo('checked');};?>> Right<br>
             </div>
 
             <div class='formtext'>Would you like to capitalize each word?:</div>
-            <input type='radio' name='camel' value='yes' id='camelyes'<?php if($form['camel']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
+            <input type='radio' name='camel' value='yes' id='camelyes' <?php if($form['camel']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
             <input type='radio' name='camel' value='no' id='camelno' <?php if($form['camel']=='no'){echo('checked');};?>> No<br>
 
             <div id='capsdiv'<?php if($form['camel']=='yes'){echo('style="display:none"');};?>>
                 <div class='formtext'>  Would you like all caps or lowercase?:</div>
-                <input type='radio' name='caps' value='caps'<?php if($form['caps']!='lower'){echo('checked');};?>><div class='radio1text'>Caps</div>
+                <input type='radio' name='caps' value='caps' <?php if($form['caps']!='lower'){echo('checked');};?>><div class='radio1text'>Caps</div>
                 <input type='radio' name='caps' value='lower' <?php if($form['caps']=='lower'){echo('checked');};?>> Lower<br>
             </div>
             <div class='formtext'></div><input id='getpassword' type='submit' value='Get Password'>
@@ -72,15 +72,6 @@
         <?php foreach($imagesfordiv as $key => $value)
             echo("<div class='imagediv' style='display:inline-block'><img src='images/".$imagesfordiv[$key]."' alt='".$namesfordiv[$key]."' height='125' width='125'><br>".$namesfordiv[$key]."</div>");
             ?>
-        <!--<div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[0]);?>' alt='<?php echo($namesfordiv[0]);?>' height='125' width='125'><br><?php echo($namesfordiv[0]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[1]);?>' alt='<?php echo($namesfordiv[1]);?>' height='125' width='125'><br><?php echo($namesfordiv[1]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[2]);?>' alt='<?php echo($namesfordiv[2]);?>' height='125' width='125'><br><?php echo($namesfordiv[2]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[3]);?>' alt='<?php echo($namesfordiv[3]);?>' height='125' width='125'><br><?php echo($namesfordiv[3]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[4]);?>' alt='<?php echo($namesfordiv[4]);?>' height='125' width='125'><br><?php echo($namesfordiv[4]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[5]);?>' alt='<?php echo($namesfordiv[5]);?>' height='125' width='125'><br><?php echo($namesfordiv[5]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[6]);?>' alt='<?php echo($namesfordiv[6]);?>' height='125' width='125'><br><?php echo($namesfordiv[6]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[7]);?>' alt='<?php echo($namesfordiv[7]);?>' height='125' width='125'><br><?php echo($namesfordiv[7]);?></div>
-        <div class='imagediv' style='display:inline-block'><img src='images/<?php echo($imagesfordiv[8]);?>' alt='<?php echo($namesfordiv[8]);?>' height='125' width='125'><br><?php echo($namesfordiv[8]);?></div>-->
         <br>
         <!--I don't like the css style here, if the password is long and you shrink the window the password will go past the background, v2 problem-->
         <div id='finalpassword'><h2>Your Password is: <?php echo($password)?></h2></div>
