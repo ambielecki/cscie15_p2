@@ -9,15 +9,16 @@ body{
 	margin: 0 0 50px;
 }
 
-header{
+header {
 	background-color: #00417A;
 	color: white;
-	padding: 2px 0px 2px 100px;
-	margin-bottom: 25px;
+	padding: 2px 0 2px 100px;
+	max-width: 1200px;
+	margin: 0 auto 25px;
 }
 #maincontainer{
-	margin-left: 100px;
-	margin-right: 100px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 #optionsform{
 	width: 700px;
@@ -58,11 +59,16 @@ header{
 }
 
 footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
 	height: 50px;
 	width: 100%;
 	background-color: #00417A;
 	color: white;
+	max-width: 1200px;
+	margin: 25px auto 0;
+}
+#xkcd_image{
+	float: right;
+	margin-left: 10px;
+	width: 500px;
+	height: auto;
 }

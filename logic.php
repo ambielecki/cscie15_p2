@@ -21,12 +21,8 @@
         $name = str_replace('.jpg','',$value);
         $nameslist[$key]=$name;
     }
-    
-     //set up blank array for the image display and the words below them
-    for ($j=0; $j<=8; $j++){
-        $imagesfordiv[$j] = 'blank.jpg';
-        $namesfordiv[$j] = '';
-    }
+
+    $imagesfordiv = [];
     
     $password = '';//initiate the password
     $placeholder = '';
