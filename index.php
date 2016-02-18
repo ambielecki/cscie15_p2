@@ -70,7 +70,7 @@
         </form><br>
 
         <?php foreach($imagesfordiv as $key => $value)
-            echo("<div class='imagediv' style='display:inline-block'><img src='images/".$imagesfordiv[$key]."' alt='".$namesfordiv[$key]."' height='125' width='125'><br>".$namesfordiv[$key]."</div>");
+            echo("<div class='imagediv' style='display:inline-block'><img src='images/".$imagesfordiv[$key]." ' alt='".$namesfordiv[$key]."' height='125' width='125'><br>".$namesfordiv[$key]."</div>");
             ?>
         <br>
         <!--I don't like the css style here, if the password is long and you shrink the window the password will go past the background, v2 problem-->
