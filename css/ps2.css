@@ -51,6 +51,7 @@ header {
 }
 #finalpassword h2{
 	font-size: 1.2em;
+	word-wrap: break-word;
 }
 .hint{
 	display: none;
