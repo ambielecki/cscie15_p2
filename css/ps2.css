@@ -46,6 +46,11 @@ header {
 	background-color: #00417A;
 	color: white;
 	width: 100%;
+	padding: 2px 0;
+	margin-top: 4px;
+}
+#finalpassword h2{
+	font-size: 1.2em;
 }
 .hint{
 	display: none;

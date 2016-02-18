@@ -14,15 +14,14 @@
     fclose($imagefile);//close our imagefile
     
     //create the array that will contain our word list
-    $nameslist = array();
+    $nameslist = [];
+    $imagesfordiv = [];
     
     //get words from the imagelist without the .jpg
     foreach($imagelist as $key => $value){
         $name = str_replace('.jpg','',$value);
         $nameslist[$key]=$name;
     }
-
-    $imagesfordiv = [];
     
     $password = '';//initiate the password
     $placeholder = '';
@@ -43,10 +42,6 @@
         if($form['howmany']){
             $placeholder = $form['howmany'];
         }
-
-        //arrays for the images and names we'll use to build the password
-        $imagesfordiv = array();
-        $namesfordiv = array();
         
         //build our arrays of image names and words for the password
         for ($i=0; $i<$form['howmany']; $i++){
