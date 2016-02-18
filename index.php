@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <div class='header'>
+    <header>
         <h1>
             CSCI E-15 P2<br>
              An XKCD Style Password Generator<br>
-             As Seen Through the Eyes of a 4 Year Old
+             As Seen Through the Eyes of a Child
         </h1>
-    </div>
+    </header>
     <div id='maincontainer'>
         <form method='post' action='index.php' id='optionsform'>
             <!--I know this could have been done using a dropdown, but I actually wanted to work on some validation-->
@@ -68,7 +68,7 @@
             </div>
             <div class='formtext'></div><input id='getpassword' type='submit' value='Get Password'>
         </form><br>
-        
+
         <?php foreach($imagesfordiv as $key => $value)
             echo("<div class='imagediv' style='display:inline-block'><img src='images/".$imagesfordiv[$key]."' alt='".$namesfordiv[$key]."' height='125' width='125'><br>".$namesfordiv[$key]."</div>");
             ?>
@@ -93,7 +93,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>This site will allow you to create your own XKCD password by entering the number of words you would like it to contain along with a number of options. 
+            <h3>This site will allow you to create your own XKCD password by entering the number of words you would like it to contain along with a number of options.
             And just to make a little different, your words are selected from the names of my sons toys with an added picture to help you remember.
             <br>Options include:</h3>
             <ul>
@@ -103,7 +103,8 @@
             </ul>
         </div>
     </div>
-
-
+    <footer>
+        &copy; <?php date('Y')  ?> Andrew Bielecki
+    </footer>
 </body>
 </html>

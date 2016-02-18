@@ -1,5 +1,17 @@
-.header{
-	background-color: #D6D6D6;
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body{
+	background-color: #E6F7FF;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0 0 50px;
+}
+
+header{
+	background-color: #00417A;
+	color: white;
 	padding: 2px 0px 2px 100px;
 	margin-bottom: 25px;
 }
@@ -10,8 +22,9 @@
 #optionsform{
 	width: 700px;
 	padding: 5px;
-	border-style: solid;
-	background-color: #66CCFF;
+	background-color: #00417A;
+	color: white;
+	font-size: .8em;
 }
 .formtext{
 	display: inline-block;
@@ -29,7 +42,8 @@
 	width: 100px;
 }
 #finalpassword{
-	background-color: #66CCFF;
+	background-color: #00417A;
+	color: white;
 	width: 100%;
 }
 .hint{
@@ -41,4 +55,14 @@
 }
 .imagediv{
 	margin-right: 2px;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	background-color: #00417A;
+	color: white;
 }

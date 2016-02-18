@@ -30,6 +30,9 @@
     
     $password = '';//initiate the password
     $placeholder = '';
+
+    //note to self using the char < messed everthing up
+    $speciallist = array('!','#','%','&','+','>','~'); //an array of some special characters
     
     //if is for php validation, you should never see this unless JS is disabled
     if(($_POST) && (is_numeric($_POST['howmany'])) && ($_POST['howmany']>0) && ($_POST['howmany']<10)){
@@ -44,19 +47,10 @@
         if($form['howmany']){
             $placeholder = $form['howmany'];
         }
-        
-        //note to self using the char < messed everthing up
-        $speciallist = array('!','#','%','&','+','>','~'); //an array of some special characters
 
         //arrays for the images and names we'll use to build the password
         $imagesfordiv = array();
         $namesfordiv = array();
-        
-        //set up blank array for the image display and the words below them
-        for ($j=0; $j<=8; $j++){
-            $imagesfordiv[$j] = 'blank.jpg';
-            $namesfordiv[$j] = '';
-        }
         
         //build our arrays of image names and words for the password
         for ($i=0; $i<$form['howmany']; $i++){
