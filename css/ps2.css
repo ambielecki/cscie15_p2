@@ -27,8 +27,9 @@ header {
 	color: white;
 	font-size: .8em;
 }
-.formtext{
+.formquestion{
 	display: inline-block;
+	padding: 4px 0;
 	width: 400px;
 }
 .radio1text{
@@ -77,4 +78,12 @@ footer {
 	margin-left: 10px;
 	width: 500px;
 	height: auto;
+}
+.radiolabel{
+	width: 75px;
+	display: inline-block;
+}
+input[type='radio']{
+	float: left;
+	vertical-align: middle;
 }

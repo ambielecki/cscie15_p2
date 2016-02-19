@@ -21,52 +21,52 @@
     <div id='maincontainer'>
         <form method='post' action='index.php' id='optionsform'>
             <!--I know this could have been done using a dropdown, but I actually wanted to work on some validation-->
-            <div class='formtext'>How Many Words Would You Like? (min = 1 max = 9)?:</div><input id='numberofwords' type='text' name='howmany' value='<?php echo($placeholder);?>'><br>
+            <label for="numberofwords" class="formquestion">How Many Words Would You Like? (min = 1 max = 9)?:</label><input id='numberofwords' type='text' name='howmany' value='<?php echo($placeholder);?>'><br>
             <div id='numberhint' class='hint'>Only values between 1 and 9 are accepted (JS)</div>
             <div id='phpwarning'><?php echo($warning)?></div>
             <br>
 
             <!--Got ideas for preserving user data in this StackOverflow http://stackoverflow.com/questions/19097320/keeping-radio-buttons-checked-after-form-submit-->
-            <div class='formtext'>Would you like to include a separator between words?:</div>
-            <input type='radio' name='separator' value='yes' id='sepyes' <?php if($form['separator']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
-            <input type='radio' name='separator' value='no' id='sepno' <?php if($form['separator']=='no'){echo('checked');};?>> No<br>
+            <div class="formquestion">Would you like to include a separator between words?:</div>
+            <label class="radiolabel"><input type='radio' name='separator' value='yes' id='sepyes' <?php if($form['separator']!='no'){echo('checked');};?>>Yes</label>
+            <label class="radiolabel"><input type='radio' name='separator' value='no' id='sepno' <?php if($form['separator']=='no'){echo('checked');};?>>No</label><br>
 
             <div id='sepdiv' <?php if($form['separator']=='no'){echo('style="display:none"');};?>>
-                <div class='formtext'>Use _ or - ?:</div>
-                <input type='radio' name='sepval' value='_' <?php if($form['sepval']!='-'){echo('checked');};?>><div class='radio1text'>_</div>
-                <input type='radio' name='sepval' value='-' <?php if($form['sepval']=='-'){echo('checked');};?>> -<br>
+                <div class='formquestion'>Use _ or - ?:</div>
+                <label class="radiolabel"><input type='radio' name='sepval' value='_' <?php if($form['sepval']!='-'){echo('checked');};?>>_</label>
+                <label class="radiolabel"><input type='radio' name='sepval' value='-' <?php if($form['sepval']=='-'){echo('checked');};?>> -</label><br>
             </div>
 
-            <div class='formtext'>Would you like to include a special character (ex: !%#)?:</div>
-            <input type='radio' name='special' value='yes' id='charyes' <?php if($form['special']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
-            <input type='radio' name='special' value='no' id='charno' <?php if($form['special']=='no'){echo('checked');};?>> No<br>
+            <div class='formquestion'>Would you like to include a special character (ex: !%#)?:</div>
+            <label class="radiolabel"><input type='radio' name='special' value='yes' id='charyes' <?php if($form['special']!='no'){echo('checked');};?>>Yes</label>
+            <label class="radiolabel"><input type='radio' name='special' value='no' id='charno' <?php if($form['special']=='no'){echo('checked');};?>>No</label><br>
 
             <div id='chardiv' <?php if($form['special']=='no'){echo('style="display:none"');};?>>
-                <div class='formtext'>On the left or right?:</div>
-                <input type='radio' name='charpos' value='left' <?php if($form['charpos']!='right'){echo('checked');};?>><div class='radio1text'>Left</div>
-                <input type='radio' name='charpos' value='right' <?php if($form['charpos']=='right'){echo('checked');};?>> Right<br>
+                <div class='formquestion'>On the left or right?:</div>
+                <label class="radiolabel"><input type='radio' name='charpos' value='left' <?php if($form['charpos']!='right'){echo('checked');};?>>Left</label>
+                <label class="radiolabel"><input type='radio' name='charpos' value='right' <?php if($form['charpos']=='right'){echo('checked');};?>>Right</label><br>
             </div>
 
-            <div class='formtext'>Would you like to include a number?:</div>
-            <input type='radio' name='number' value='yes' id='numyes' <?php if($form['number']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
-            <input type='radio' name='number' value='no' id='numno' <?php if($form['number']=='no'){echo('checked');};?>> No<br>
+            <div class='formquestion'>Would you like to include a number?:</div>
+            <label class="radiolabel"><input type='radio' name='number' value='yes' id='numyes' <?php if($form['number']!='no'){echo('checked');};?>>Yes</label>
+            <label class="radiolabel"><input type='radio' name='number' value='no' id='numno' <?php if($form['number']=='no'){echo('checked');};?>>No</label><br>
 
             <div id='numdiv' <?php if($form['number']=='no'){echo('style="display:none"');};?>>
-                <div class='formtext'>On the left or right?:</div>
-                <input type='radio' name='numpos' value='left' <?php if($form['numpos']!='right'){echo('checked');};?>><div class='radio1text'>Left</div>
-                <input type='radio' name='numpos' value='right' <?php if($form['numpos']=='right'){echo('checked');};?>> Right<br>
+                <div class='formquestion'>On the left or right?:</div>
+                <label class="radiolabel"><input type='radio' name='numpos' value='left' <?php if($form['numpos']!='right'){echo('checked');};?>>Left</label>
+                <label class="radiolabel"><input type='radio' name='numpos' value='right' <?php if($form['numpos']=='right'){echo('checked');};?>>Right</label><br>
             </div>
 
-            <div class='formtext'>Would you like to capitalize each word?:</div>
-            <input type='radio' name='camel' value='yes' id='camelyes' <?php if($form['camel']!='no'){echo('checked');};?>><div class='radio1text'>Yes</div>
-            <input type='radio' name='camel' value='no' id='camelno' <?php if($form['camel']=='no'){echo('checked');};?>> No<br>
+            <div class='formquestion'>Would you like to capitalize each word?:</div>
+            <label class="radiolabel"><input type='radio' name='camel' value='yes' id='camelyes' <?php if($form['camel']!='no'){echo('checked');};?>>Yes</label>
+            <label class="radiolabel"><input type='radio' name='camel' value='no' id='camelno' <?php if($form['camel']=='no'){echo('checked');};?>>No</label><br>
 
             <div id='capsdiv'<?php if($form['camel']=='yes'){echo('style="display:none"');};?>>
-                <div class='formtext'>  Would you like all caps or lowercase?:</div>
-                <input type='radio' name='caps' value='caps' <?php if($form['caps']!='lower'){echo('checked');};?>><div class='radio1text'>Caps</div>
-                <input type='radio' name='caps' value='lower' <?php if($form['caps']=='lower'){echo('checked');};?>> Lower<br>
+                <div class='formquestion'>  Would you like all caps or lowercase?:</div>
+                <label class="radiolabel"><input type='radio' name='caps' value='caps' <?php if($form['caps']!='lower'){echo('checked');};?>>Caps</label>
+                <label class="radiolabel"><input type='radio' name='caps' value='lower' <?php if($form['caps']=='lower'){echo('checked');};?>>Lower</label><br>
             </div>
-            <div class='formtext'></div><input id='getpassword' type='submit' value='Get Password'>
+            <div class='formquestion'></div><input id='getpassword' type='submit' value='Get Password'>
         </form><br>
 
         <?php foreach($imagesfordiv as $key => $value)
