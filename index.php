@@ -78,7 +78,7 @@
 
         <div id='explanation'>
             <a href="https://xkcd.com/936/"><img src="images/password_strength.png" id="xkcd_image" alt="XKCD Password Strength Cartoon"></a>
-            <h3>Welcome to my version of an XKCD password generator. What is an XKCD password? You could go to the source and read the comic at <a href='https://xkcd.com/936/'>xkcd: Password Strength</a>, but in words:</h3>
+            <h3>Welcome to my version of an XKCD password generator. What is an XKCD password? You could check out the source <a href='https://xkcd.com/936/'>XKCD comic </a>, but in words:</h3>
             <ul>
                 <li>Passwords as we know them, with added numbers, special characters, and random caps have some flaws
                     <ul>
